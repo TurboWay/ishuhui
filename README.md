@@ -8,4 +8,6 @@
 &emsp;&emsp;cd:ishuhui &emsp;&emsp;  # cmd 进入到项目 目录  
 &emsp;&emsp;scrapy crawl comices -a num=930 &emsp;&emsp; # 下载指定的章节（930话）  
 &emsp;&emsp;scrapy crawl comices -a new=5 &emsp;&emsp;  # 下载最新的5话  
-&emsp;&emsp;scrapy crawl comices &emsp;&emsp; # 全部下载    
+&emsp;&emsp;scrapy crawl comices &emsp;&emsp; # 全部下载  
+## 效果图  
+![Image text](https://github.com/TurboWay/ishuhui/blob/master/img_example/eg.png)
