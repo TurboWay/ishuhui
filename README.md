@@ -1,6 +1,7 @@
 # 海贼王鼠绘漫画下载
 环境：python3  
 说明：基于scrapy的爬虫，下载鼠绘翻译的海贼王漫画，根据章节分文件夹下载到指定目录  
+安装依赖包：pip install -r requirements.txt  
 使用：  
 1、下载项目到本地  
 2、根据需要修改setting.py的存储路径，默认： IMAGES_STORE = 'D:\下载测试'  
