@@ -32,7 +32,7 @@ class ComicesSpider(scrapy.Spider):
             yield item
 
 def get_comices():
-    listapi = 'https://prod-api.ishuhui.com/ver/16786885/anime/detail?id=1&type=comics&.json'
+    listapi = 'https://prod-api.ishuhui.com/ver/aa056422/anime/detail?id=1&type=comics&.json'
     dt = json.loads(requests.get(listapi).text)
     nums = dt['data']['comicsIndexes']['1']['nums']
     lt = []
