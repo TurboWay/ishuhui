@@ -9,7 +9,7 @@
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 DOWNLOAD_TIMEOUT = 500
-IMAGES_STORE = 'D:\下载测试'
+IMAGES_STORE = 'E:\鼠绘漫画下载'
 
 BOT_NAME = 'ishuhui'
 

@@ -38,31 +38,3 @@ class IshuhuiImagesPipeline(ImagesPipeline):
             raise DropItem('Item contains no images')
         item['image_paths'] = image_path
         return item
-
-
-
-class IshuhuiPipeline(object):
-
-    def mkdir(self,path):
-        if not os.path.exists(path):
-            os.mkdir(path)
-
-    def down_img(self,url,path):
-        times = 0
-        while times < 3:
-            try:
-                with open(path, 'wb') as f:
-                    f.write(requests.get(url).content)
-                break
-            except:
-                times += 1
-
-    def process_item(self, item, spider):
-        dir = 'D:\下载测试\{0}'.format(item['animeName'])
-        self.mkdir(dir)
-        title = re.sub(r'[\\/:*?"<>|\r\n]+', '', item['title'])
-        titlepath = dir + '\第 {0} 话 {1}'.format(item['num'], title)
-        self.mkdir(titlepath)
-        img_path = titlepath + '\\' + item['img_name']
-        self.down_img(item['img_url'], img_path)
-
