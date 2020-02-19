@@ -68,5 +68,7 @@ def get_comices():
         title = re.sub('海贼王\d+话[ |:|：]', '', row.find('a').get('title'))
         title = title.split('话：')[-1]
         num = re.sub('[话|集]', '', row.find('a').text)
+        if title == '如龙添翼':
+            num = '954'  # 站点话数bug修正
         details.append((num, title, url))
     return details
