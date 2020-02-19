@@ -27,7 +27,7 @@ class IshuhuiImagesPipeline(ImagesPipeline):
         num = request.meta['num']
         img_name = request.meta['img_name']
         title = re.sub(r'[\\/:*?"<>|\r\n]+', '', request.meta['title'])
-        filename = f'海賊王\第 {num} 话 {title}\{img_name}'
+        filename = f'海賊王/第 {num} 话 {title}/{img_name}'
         return filename
 
     def item_completed(self, results, item, info):

@@ -1,4 +1,4 @@
 requests==2.21.0
 Scrapy==1.5.1
 bs4==0.0.1
-
+Pillow==7.0.0
