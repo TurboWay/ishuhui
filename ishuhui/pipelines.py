@@ -21,7 +21,7 @@ class IshuhuiImagesPipeline(ImagesPipeline):
     def file_path(self, request, response=None, info=None):
         img_name = request.meta['img_name']
         title = request.meta['title']
-        filename = f'海賊王2/{title}/{img_name}'
+        filename = f'海賊王/{title}/{img_name}'
         return filename
 
     def item_completed(self, results, item, info):
